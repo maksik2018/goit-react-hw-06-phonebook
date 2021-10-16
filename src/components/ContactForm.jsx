@@ -25,10 +25,7 @@ import { addContact } from '../redux/phonebook-actions';
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // onSubmit({ name, number });
-    // setName("");
-    // setNumber("");
-  //  };
+    
    
      const checkOnContact = contacts.find(
       (contact) => contact.name.toLowerCase() === name.toLowerCase()
@@ -89,7 +86,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);
-// export default connect(null, mapDispatchToProps)(ContactForm);
+
 ContactForm.propTypes = {
     name: PropTypes.string,
     number: PropTypes.string,

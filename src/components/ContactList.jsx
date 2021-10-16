@@ -41,10 +41,7 @@ const filterByName = (state) => {
   const mapStateToProps = (state) => ({
   contacts: filterByName(state),
 });
-// const mapStateToProps = state => ({
-//   contacts: state.contacts.items,
-//   filter: state.contacts.filter
-// })
+
 
 const mapDispatchToProps = (dispatch) => ({
   onDeleteContact: (id) => dispatch(deleteContact(id)),
